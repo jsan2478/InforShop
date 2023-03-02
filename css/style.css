@@ -108,6 +108,23 @@ body {
     content: "Panier";
 }
 
+
+
+/*REMOVING SECOND DEFAULT SEARCH ICON*/
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+}
+/*REMOVING SECOND DEFAULT SEARCH ICON*/
+
+
+
 .form-search-box {
     width: 100%;
     position: relative;
