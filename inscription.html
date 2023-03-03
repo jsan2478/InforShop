@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar" >
+    <nav class="navbar">
         <ul class="nav-links">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="#">Produits</a></li>
@@ -54,29 +54,40 @@
 <main class="main">
     <div class="sub-nav">
         <img src="img/home.png" alt="Home icon" class="home-icon">
-        <i class="fa-solid fa-angle-right sub-nav-arrow" ></i>
-        <a href="index.html" class="navigation-button connection">Connexion</a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
+        <a href="inscription.html" class="navigation-button inscription">Inscription</a>
     </div>
-    <form action="#" class="connection-form">
-    <h2 class="connection-form-heading">Connexion</h2>
-        <div>
-            <label for="email"></label>
-            <input class="connection-form-input" placeholder="Email" type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="password"></label>
-            <input class="connection-form-input" placeholder="Password" type="password" id="password" name="password" required>
-        </div>
-        <button class="btn-gray form-connection-button" type="submit"><i class="fa-solid fa-check connection-button-check-icon"></i>Connexion</button>
-        <div class="inscription-connect-with-google-container">
-        <a href="inscription.html" class="form-inscription-button">Inscription</a>
-        <button class="connection-with-google-button"><img src="img/google.png" class="google-icon" alt=""> Connexion Google</button>
-        </div>
+    <form action="/submit-form" method="post" class="inscription-form">
+        <h2 class="inscription-form-heading">Inscription</h2>
+        <label class="label label-email"  for="email">Email*
+            <input class="inscription-form-input" type="email" id="email" name="email" required>
+        </label>
+        <label class="label label-password"  for="password">Mot de passe*
+            <input class="inscription-form-input" type="password" id="password" name="password" required>
+        </label>
+        <label class="label label-name" for="name">Prénom*
+            <input class="inscription-form-input" type="text" id="name" name="name" required>
+        </label>
+        <label class="label label-surname" for="surname">Nom*
+            <input class="inscription-form-input" type="text" id="surname" name="surname" required>
+        </label>
+        <label class="label label-birth-year"  for="birth-year">Date de naissance*
+            <input class="inscription-form-input" type="number" id="birth-year" name="birth-year" required>
+        </label>
+        <label class="label label-conditions"  for="conditions">
+            <input class="inscription-form-checkbox" type="checkbox" id="conditions" name="conditions" required><span class="inscription-form-checkbox-text"> J'ai lu et j'accepte les <span class="checkbox-conditions-span">CGV</span> ...*</span>
+        </label>
+
+
+        <button class="inscription-form-submit-btn btn-gray" type="submit"><i class="fa-solid fa-check connection-button-check-icon"></i>Inscription</button>
+
+
     </form>
+
 </main>
 <footer class="footer">
     <div class="footer-container">
-    <p>© Inforshop.store & site by <span class="footer-created-by">ISL SCRL</span></p>
+        <p>© Inforshop.store & site by <span class="footer-created-by">ISL SCRL</span></p>
     </div>
 </footer>
 <script src="script.js"></script>

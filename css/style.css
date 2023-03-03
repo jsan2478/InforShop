@@ -18,6 +18,7 @@
 
 html {
     font-size: 62.5%;
+
 }
 
 body {
@@ -290,12 +291,13 @@ input[type="search"] {
     font-weight: bold;
 }
 
-.connection-button {
-    padding: 8px 14px;
+.navigation-button {
+    padding: 5px 14px;
     border: none;
     background-color: var(--white);
     color: #686868;
     font-size: 1.25rem;
+    text-decoration: none;
 }
 
 
@@ -328,14 +330,27 @@ input[type="search"] {
 }
 
 .form-connection-button {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+/*    padding: 8px 15px;*/
+/*    background-color: var(--sky-blue);*/
+/*    border: none;*/
+/*    color: var(--white);*/
+/*    border-radius: 4px;*/
+/*    font-size: 1.1rem;*/
+/*    margin-top: 15px;*/
+/*    margin-bottom: 30px;*/
+
+
+.btn-gray {
     padding: 8px 15px;
     background-color: var(--sky-blue);
     border: none;
     color: var(--white);
     border-radius: 4px;
     font-size: 1.1rem;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    max-width: 120px;
 }
 
 .connection-button-check-icon {
@@ -369,6 +384,8 @@ input[type="search"] {
 
 .footer {
     background: linear-gradient(to right, var(--dark-blue), var(--light-blue));
+
+
 }
 
 .footer-container {
@@ -376,11 +393,60 @@ input[type="search"] {
     padding: 30px 0;
     color: var(--white);
     max-width: var(--max-width);
+    min-height: 300px;
+
 }
 
 .footer-created-by {
     text-decoration: underline;
 }
+
+/*INSCRIPTION PAGE - START*/
+
+.inscription-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    background-color: var(--white);
+    color: var(--light-blue);
+    margin-top: 50px;
+    padding: 30px 20px 60px 20px;
+    gap: 20px;
+}
+.label {
+    height: 20px;
+
+}
+/** {*/
+/*    outline: 1px solid red;*/
+/*}*/
+
+.inscription-form-heading {
+    grid-column: 1/-1;
+}
+.inscription-form-input {
+    /*grid-column: 1/-1;*/
+    border: none;
+    border-bottom: 1px solid var(--light-blue);
+    width: 100%;
+}
+.inscription-form-input:focus {
+    outline: none;
+}
+.label-conditions {
+   grid-column: 1/-1;
+}
+.inscription-form-submit-btn {
+    grid-column: 1/-1;
+}
+
+.checkbox-conditions-span {
+    text-decoration: underline;;
+}
+.inscription-form-checkbox-text {
+    font-weight: bold;
+}
+/*INSCRIPTION PAGE - END*/
 
 @media only screen and (min-width: 768px) {
     .header > .container {
@@ -399,6 +465,7 @@ input[type="search"] {
         background: transparent;
         max-height: 70px;
     }
+
 
     .nav-links {
         display: flex;
@@ -439,7 +506,7 @@ input[type="search"] {
     }
 
     .main {
-        padding-bottom: 200px;
+        margin-bottom: 200px;
     }
 
     .footer-container {
@@ -457,6 +524,9 @@ input[type="search"] {
     }
     .x-button-container.active {
         display: none;
+    }
+    .inscription-form {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
