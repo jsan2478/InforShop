@@ -55,35 +55,59 @@
     <div class="sub-nav">
         <img src="img/home.png" alt="Home icon" class="home-icon">
         <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
-        <a href="inscription.html" class="navigation-button inscription">Inscription</a>
+        <a href="cart.html" class="navigation-button connection">Mon panier</a>
     </div>
-    <form action="/submit-form" method="post" class="inscription-form">
-        <h2 class="inscription-form-heading">Inscription</h2>
-        <label class="inscription-form-label" >Email*
-            <input class="inscription-form-input" type="email" id="l" name="email" required>
-        </label>
-        <label class="inscription-form-label" >Mot de passe*
-            <input class="inscription-form-input" type="password" name="password" required>
-        </label>
-        <label class="inscription-form-label">Prénom*
-            <input class="inscription-form-input" type="text" name="name" required>
-        </label>
-        <label class="inscription-form-label">Nom*
-            <input class="inscription-form-input" type="text" name="surname" required>
-        </label>
-        <label class="inscription-form-label" >Date de naissance*
-            <input class="inscription-form-input" type="number" name="birth-year" required>
-        </label>
-        <label class="inscription-form-label inscription-form-label-conditions">
-            <input class="inscription-form-checkbox" type="checkbox" name="conditions" required><span class="inscription-form-checkbox-text"> J'ai lu et j'accepte les <span class="inscription-form-checkbox-span">CGV</span> ...*</span>
-        </label>
-
-
-        <button class="inscription-form-submit-btn btn-gray" type="submit"><i class="fa-solid fa-check connection-button-check-icon"></i>Inscription</button>
-
-
-    </form>
-
+    <div class="cart-items-status">
+        <h2 class="cart-items-status-heading">Mon panier</h2>
+        <table class="cart-items-table">
+            <thead>
+            <tr>
+                <th>Produit</th>
+                <th>Quantité</th>
+                <th>Prix Unitaire</th>
+                <th>TVA(%)</th>
+                <th>Total HTVA</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Produit">Clavier Logitech K860</td>
+                <td data-label="Quantity"><label for="quantity"></label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="100">
+                </td>
+                <td data-label="Prix Unitaire"><span>100</span>€</td>
+                <td data-label="TVA(%)">21</td>
+                <td data-label="Total HTVA"><span>100</span>€</td>
+                <td data-label="Action"><i class="fa-regular fa-trash-can"></i></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total HTVA</td>
+                <td></td>
+                <td><strong><span>100</span>€</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td >Total TVA</td>
+                <td></td>
+                <td ><strong><span>21</span>€</strong></td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td></td>
+                <td></td>
+                <td >Total TVAC</td>
+                <td></td>
+                <td ><strong><span>121</span>€</strong></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </main>
 <footer class="footer">
     <div class="footer-container">
