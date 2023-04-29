@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+  @include respond(tablet-portrait) {
+    font-size: 56.25%
+  }
+  @include respond(tablet-landscape) {
+    font-size: 62.5%
+  }
+}
+
+body {
+  background-color: #e4e4e4;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+
+.main {
+  &-container {
+    padding: 0 20px 50px 20px;
+  }
+  @include respond(tablet-portrait) {
+    margin-bottom: 0
+  }
+  @include respond(desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+

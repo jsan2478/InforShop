@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InforShop</title>
+    <link rel="stylesheet" href="../../dist/styles/main.css">
+    <script src="https://kit.fontawesome.com/069baf1ef0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="../../index.html"><img src="../images/inforshop.png" alt="Logo Icon" class="logo">
+            </a>
+        </div>
+        <form class="form-search-box">
+            <label for="search"></label>
+            <input type="search" class="search-input" id="search" name="search" placeholder="Chercher un produit ...">
+            <img src="../images/search2.png" alt="Search Icon" class="search-icon">
+        </form>
+        <div class="user-and-cart-container">
+            <div class="user-icon-container">
+                <a href="connection.html"><img src="../images/user2.png" alt="User Icon" class="user-icon"></a>
+            </div>
+            <div class="cart-icon-container">
+                <a href="cart.html"><img src="../images/cart2.png" alt="Cart Icon" class="cart-icon">
+                    <div class="cart-count-container">
+                        <span class="cart-count">0</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../../index.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger active">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+    <div class="x-button">
+        <span class="x-button-line x-button-line-first"></span>
+        <span class="x-button-line x-button-line-second"></span>
+    </div>
+</header>
+<main class="main" id="product-main">
+    <div class="sub-nav">
+
+        <a href="../../index.html"> <img src="../images/home.png" alt="Home icon" class="home-icon"></a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
+
+        <a href="products.html" class="navigation-button connection">Pc de bureau</a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
+        <a href="product-page.html" class="navigation-button connection">Ecran AOC Gaming 144 hz</a>
+        <i class="fa-solid fa-angle-right sub-nav-arrow"></i>
+    </div>
+    <div class="product-description">
+        <h1 class="product-description-heading">Ecran AOC Gaming 144 hz</h1>
+        <div class="product-description-img-container">
+            <img class="product-description-img" src="../images/pc.png" alt="PC Image">
+        </div>
+        <div class="product-info product-info-container">
+            <h2 class="product-info-heading">Description</h2>
+            <p class="product-info-detail">Lorem insum dolor sit amet. consectetu
+                adipiscing elit. Sed ultrices neque
+                maximus, tristique velit quis, volutpat eli
+                Fusce in convallis urna. mollis tincidunt
+                sapien. Nunc iaculis convallis mi el
+                interdum. Maecenas non lacus dignissim
+                aliquam sapien ut. luctus nisi. Maecena:
+                convallis, risus a pellentesque imperdiet,
+                sapien augue elementum ante, sit ame
+                volutoat mauris velit nec augue. Phasellu:
+                laoreet tincidunt neque ac luctus. Morb
+                Tacisis mauris ac eros convans venenans
+                Curabitur vitae feugiat nibh, in dignissir
+                neque. Integer egestas lacinia felis nor
+                ornare. Sed ut magna malesuada. placera
+                magna non, eleitend nunc. Donec egestas
+                tUrDIS I0 orci moleste. ac cursus orem
+                pulvinar. Aliquam erat volutoat. Etiam a
+                odio lobortis, pulvinar nunc non, egestas
+                vestibulum condimentum. Aliquam ic
+                nunc viverra, posuere lectus eget</p>
+           <div class="product-info-sub-container">
+               <div class="product-price"><span class="price">395</span> €</div>
+               <div class="stock-remaining"><span class="stock-remaining-quantity">15</span> en stock</div>
+                <div class="quantity-add-cart-container">
+               <label for="product-quantity"></label>
+               <input type="number" id="product-quantity" class="product-quantity" name="product-quantity" min="0" max="100" step="1" value="1">
+               <button class="product-info-add-button">
+                   <img class="add-product-button-img" src="../images/cart3.png" alt="Cart Icon"> Ajouter au panier
+               </button>
+                </div>
+               <form action="https://jsan2478.github.io/sassinforshop/" method="POST">
+                   <label for="colors"></label>
+                   <select name="cars" id="colors">
+                       <option value="black">Noir</option>
+                       <option value="white">Blanc</option>
+                       <option value="orange">Orange</option>
+                   </select>
+               </form>
+
+           </div>
+
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <p>© Inforshop.store & site by <span class="footer-created-by">ISL SCRL</span></p>
+    </div>
+</footer>
+<script src="../scripts/main.js"></script>
+</body>
+</html>
